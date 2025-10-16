@@ -5,20 +5,20 @@ export function Header() {
   const [isDark, setIsDark] = useState(false);
 
   return (
-    <header className="fixed top-0 left-64 right-0 h-24 bg-white z-40 px-12 flex items-center justify-between">
+    <header className="fixed top-0 left-0 md:left-64 right-0 h-20 md:h-24 bg-white z-40 px-4 md:px-12 flex items-center justify-between">
       <div className="flex items-center gap-4 flex-1 max-w-2xl">
-        <div className="flex-1 flex items-center gap-4 bg-gray-200/60 rounded-lg px-5 py-3.5">
-          <Search className="w-6 h-6 text-gray-text" />
+        <div className="flex-1 flex items-center gap-3 md:gap-4 bg-gray-200/60 rounded-lg px-3 md:px-5 py-2.5 md:py-3.5">
+          <Search className="w-5 h-5 md:w-6 md:h-6 text-gray-text" />
           <input
             type="text"
             placeholder="Search items, collections, and users"
-            className="flex-1 bg-transparent outline-none text-sm text-gray-1 placeholder:text-gray-text"
+            className="flex-1 bg-transparent outline-none text-xs md:text-sm text-gray-1 placeholder:text-gray-text"
           />
-          <SlidersHorizontal className="w-5 h-5 text-gray-text" />
+          <SlidersHorizontal className="w-4 h-4 md:w-5 md:h-5 text-gray-text" />
         </div>
       </div>
 
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-3 md:gap-6">
         <button
           onClick={() => setIsDark(!isDark)}
           className="w-14 h-14 rounded-full bg-gray-200/60 flex items-center justify-center hover:bg-gray-200 transition-colors"
