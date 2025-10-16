@@ -18,7 +18,7 @@ function StatCard({ icon, label, value, bgColor, accentColor }: StatCardProps) {
         <span className="text-type-dark text-base font-normal">{label}</span>
       </div>
       
-      <div className="text-type-dark text-5xl font-bold font-lato">{value}</div>
+      <div className="text-type-dark text-5xl font-bold" style={{ fontFamily: 'Lato' }}>{value}</div>
       
       <div className="flex gap-1">
         <div className={`w-1 h-20 rounded ${accentColor} opacity-30`}></div>
